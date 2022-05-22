@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethers.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    
+  </head>
+  <body>
+    <div>
+      <h1>Mood Detector</h1>
+      <p id="moodUpdated"></p>
+      <p>Here we set or get you mood</p>
+      <label for="mood">Input Your Mood :</label>
+      <input
+        type="text"
+        name=""
+        id="mood"
+        placeholder="Enter Your Current Mood"
+      />
+      <input type="button" value="SetMood" onclick="setMyMood()" />
+      <span id="status" style="display:none">You can check your transaction on <a href="" >Etherscan</a></span>
+      <input type="button" value="GetMood" onclick="getMyMood()" />
+    </div>
+  </body>
+  <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+
+ <script src="./index.js"></script>
+</html>
